@@ -44,10 +44,6 @@ When finished, the following script will remove routes and shutdown the containe
 ./shutdown.sh
 ```
 
-## Bugs / Limitations
-
-When having a MFA challenge, it seems it should be answered quickly (might be related to expect exiting?)
-
 ## TODO
 
 Add dnsmasq configuration to forward only domain-specific request to the DNS server.

@@ -10,6 +10,7 @@ send "$password\r"
 expect "*Do you accept*"
 send "y\r"
 expect "SNX - connected."
+expect "Timeout*"
 interact
 EOF
 
