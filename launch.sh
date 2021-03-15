@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo modprobe tun
+
 source $HOME/.config/snxvpn/snx.env
 docker run --name=snxvpn --cap-add=NET_ADMIN -v /lib/modules:/lib/modules:ro -e SNX_SERVER=$SNX_SERVER -e SNX_USER=$SNX_USER -e SNX_PASSWORD="$SNX_PASSWORD" -d -t clook/snxvpn
 
